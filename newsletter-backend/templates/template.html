@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notification</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+        .email-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        .header {
+            background-color: #4CAF50;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 90%;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .cta-button {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            📢 <span id="email-subject">{{subject}}</span>
+        </div>
+        <h2>Merhaba,</h2>
+        <p id="email-message">{{message}}</p>
+        <a href="https://www.ecocart.com" class="cta-button">Daha Fazla Bilgi</a>
+        <div class="footer">
+            <p>© 2025 EcoCart Commerce. Tüm Hakları Saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>
