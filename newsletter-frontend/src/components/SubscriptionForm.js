@@ -9,7 +9,7 @@ const SubscriptionForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5001/subscribe', { email });
+      const response = await axios.post('https://newsletter-contact-form-1.onrender.com/subscribe', { email });
       setMessage(response.data.message);
       setEmail('');
     } catch (error) {

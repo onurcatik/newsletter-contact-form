@@ -62,7 +62,7 @@ const AdminDashboard = () => {
     setResponse("");
 
     try {
-      const res = await axios.post("http://localhost:5001/email/send-newsletter", {
+      const res = await axios.post("https://newsletter-contact-form-1.onrender.com/email/send-newsletter", {
         subject,
         message,
       });

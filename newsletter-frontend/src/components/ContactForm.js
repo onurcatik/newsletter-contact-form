@@ -12,7 +12,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/contact', formData);
+      const response = await axios.post('https://newsletter-contact-form-1.onrender.com/contact', formData);
       setResponseMessage(response.data.message);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
