@@ -15,6 +15,13 @@ app.use(express.json());
 // userRoutes dosyasını dahil et
 
 
+app.use(express.static(path.join(__dirname, '../newsletter-frontend/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../newsletter-frontend/build', 'index.html'));
+});
+
+
 
 
 // Connect to MongoDB
