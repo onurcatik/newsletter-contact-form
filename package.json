@@ -1,0 +1,10 @@
+{
+    "name": "newsletter-contact-form",
+    "private": true,
+    "scripts": {
+      "install-all": "npm install --prefix newsletter-frontend && npm install --prefix newsletter-backend",
+      "build": "npm run build --prefix newsletter-frontend",
+      "start": "node backend/server.js"
+    }
+  }
+  
